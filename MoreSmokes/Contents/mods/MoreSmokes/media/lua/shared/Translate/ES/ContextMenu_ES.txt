@@ -1,0 +1,5 @@
+ContextMenu_ES = {
+	ContextMenu_Cultivation_Skill = "Cultivar",
+	ContextMenu_Chew = "Mascar",
+	ContextMenu_Seeds_into_a_Pack = "Poner semillas en un paquete",
+}

@@ -1,0 +1,24 @@
+module Base
+{
+	model PackCultivationBook
+	{
+		mesh = WorldItems/PackCultivationBook,
+		texture = WorldItems/PackCultivationBook,
+		scale = 0.5,
+	}
+
+	model PackMoreSmokesMags
+	{
+		mesh = WorldItems/PackRecipeMagazines,
+		texture = WorldItems/PackMoreSmokesMags,
+		scale = 0.5,
+	}
+
+	model PackMoreSmokesRareMags
+	{
+		mesh = WorldItems/PackRecipeMagazines,
+		texture = WorldItems/PackMoreSmokesRareMags,
+		scale = 0.5,
+	}
+
+}

@@ -1,0 +1,10 @@
+IGUI_RU =
+{
+	IGUI_ItemCat_MoreSmokes = "Курительные смеси",
+	IGUI_CraftCategory_MoreSmokes = "Курительные смеси",
+	IGUI_BTSE.Tobacco = "Табак",
+	IGUI_BTSE.Farming_Cannabis = "Сорта Конопли",
+	IGUI_perks_Cultivation = "Культивирование травки",
+	IGUI_BTSE_F_RevitalizePlant = "Оживить %1",
+	IGUI_BTSE_F_CnfRevitalized = "Через 10 минут должно стать гораздо лучше.",
+}

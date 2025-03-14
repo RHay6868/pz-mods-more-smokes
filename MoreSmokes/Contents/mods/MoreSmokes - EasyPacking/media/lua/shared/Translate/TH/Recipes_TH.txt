@@ -1,0 +1,17 @@
+Recipes_EN	= {
+	Recipe_Pack_Cultivation_Skill_Books				= "หีบห่อ หนังสือทักษะการเพาะปลูก",
+	Recipe_Unpack_Cultivation_Skill_Books 			= "แกะ หนังสือทักษะการเพาะปลูก",
+	Recipe_Pack_More_Smokes_Recipe_Magazines		= "หีบห่อ นิตยสารสูตรการสูบบุหรี่เพิ่มเติม",
+	Recipe_Unpack_More_Smokes_Recipe_Magazines 		= "แกะ นิตยสารสูตรการสูบบุหรี่เพิ่มเติม",
+	Recipe_Pack_More_Smokes_Rare_Recipe_Magazines	= "หีบห่อ นิตยสารสูตรอาหารหายากเพื่อการสูบบุหรี่มากขึ้น",
+	Recipe_Unpack_More_Smokes_Rare_Recipe_Magazines = "แกะ นิตยสารสูตรอาหารหายากเพื่อการสูบบุหรี่มากขึ้น",
+	Recipe_Pack_5 									= "หีบห่อ 5",
+	Recipe_Unpack_5 								= "แกะ 5",
+	Recipe_Pack_10 									= "หีบห่อ 10",
+	Recipe_Unpack_10 								= "แกะ 10",
+	Recipe_Pack_25 									= "หีบห่อ 25",
+	Recipe_Unpack_25 								= "แกะ 25",
+	Recipe_Put_Together 							= "รวมกัน",
+	Recipe_Split_into_2								= "แยกออกเป็น 2",
+	Recipe_Split_into_5 							= "แยกออกเป็น 5",
+}

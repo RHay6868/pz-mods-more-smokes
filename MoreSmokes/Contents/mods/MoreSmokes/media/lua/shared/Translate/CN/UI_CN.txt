@@ -1,0 +1,6 @@
+UI_CN = {
+    UI_trait_stoner = "沉醉者",
+    UI_trait_stonerinfo = "烟艺技能+1,让你能够立即卷制大麻卷<br>大麻沉醉增益更多,减益更少",
+    UI_trait_paranoid_toker = "药物偏执狂",
+    UI_trait_paranoid_tokerinfo = "吸食大麻让你感到恐慌和压力",
+}

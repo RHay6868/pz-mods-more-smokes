@@ -1,0 +1,10 @@
+IGUI_PTBR =
+{
+	IGUI_ItemCat_MoreSmokes = "Mais Fumaças",
+	IGUI_CraftCategory_MoreSmokes =  "Mais Fumaças",
+    IGUI_BTSE.Tobacco = "Tabaco",
+	IGUI_BTSE.Farming_Cannabis = "Cepas de Maconha",
+	IGUI_perks_Cultivation = "Cultivo",
+    IGUI_BTSE_F_RevitalizePlant = "Revitalizar %1",
+    IGUI_PARP_F_CnfRevitalized = "Isso deve estar muito melhor em 10 minutos.",
+}

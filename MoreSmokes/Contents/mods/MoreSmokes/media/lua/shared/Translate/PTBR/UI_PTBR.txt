@@ -1,0 +1,6 @@
+UI_PTBR = {
+    UI_trait_stoner = "Chapado",
+    UI_trait_stonerinfo = "Dá +1 às habilidades de Cultivo, permitindo que você role juntas imediatamente<br>Ficar chapado tem mais prós e menos contras",
+    UI_trait_paranoid_toker = "Fumante Paranóico",
+    UI_trait_paranoid_tokerinfo = "Você costuma entrar em pânico e ficar estressado quando está muito chapado",
+}

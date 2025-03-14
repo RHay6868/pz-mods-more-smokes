@@ -1,0 +1,22 @@
+Recipes_DE	= {
+	Recipe_Pack_Cultivation_Skill_Books				= "Packen Sie Kultivierungs-Fertigkeitsbücher ein",
+	Recipe_Unpack_Cultivation_Skill_Books 			= "Auspacken Sie die Kultivierungs-Fertigkeitsbücher aus",
+	Recipe_Pack_More_Smokes_Recipe_Magazines		= "Packen Sie Mehr Smokes Rezept Magazine ein",
+	Recipe_Unpack_More_Smokes_Recipe_Magazines 		= "Auspacken Sie Mehr Smokes Rezept Magazine ein",
+	Recipe_Pack_More_Smokes_Rare_Recipe_Magazines	= "Packen Sie Mehr Smokes Seltene Rezept Magazine ein",
+	Recipe_Unpack_More_Smokes_Rare_Recipe_Magazines = "Auspacken Sie Mehr Smokes Rare Rezept Magazine ein",
+	Recipe_Pack_5 									= "Packen Sie 5",
+	Recipe_Unpack_5 								= "Auspacken Sie 5",
+	Recipe_Pack_10 									= "Packen Sie 10",
+	Recipe_Unpack_10 								= "Auspacken Sie 10",
+	Recipe_Pack_25 									= "Packen Sie 25",
+	Recipe_Unpack_25 								= "Auspacken Sie 25",
+	Recipe_Put_Together 							= "Zusammensetzen",
+	Recipe_Split_into_2								= "In 2 Teile teilen",
+	Recipe_Split_into_5 							= "In 5 Teile teilen",
+}
+
+
+
+
+

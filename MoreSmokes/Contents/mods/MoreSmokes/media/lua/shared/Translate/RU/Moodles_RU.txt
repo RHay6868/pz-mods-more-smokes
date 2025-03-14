@@ -1,0 +1,13 @@
+Moodles_RU {
+	-- Moodle type
+    Moodles_Stoned_Good_lvl1 = "Легкий кайф",
+    Moodles_Stoned_Good_lvl2 = "Умеренный Кайф",
+    Moodles_Stoned_Good_lvl3 = "Усиленный кайф",
+    Moodles_Stoned_Good_lvl4 = "Чрезвычайный кайф",
+ 
+    -- Description of moodle
+    Moodles_Stoned_Good_desc_lvl1 = "Начинаешь чувствовать что-то приятное",
+    Moodles_Stoned_Good_desc_lvl2 = "А может завернем еще немного, а то маловато будет",
+    Moodles_Stoned_Good_desc_lvl3 = "Довольный как упитанный кот",
+    Moodles_Stoned_Good_desc_lvl4 = "Абсолютная эйфория",
+}

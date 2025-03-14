@@ -1,0 +1,6 @@
+UI_DE = {
+    UI_trait_stoner = "Stoner",
+    UI_trait_stonerinfo = "Gewährt +1 zu den Kultivierungsfertigkeiten, sodass Sie sofort Joints drehen können",
+    UI_trait_paranoid_toker = "Paranoid Toker",
+    UI_trait_paranoid_tokerinfo = "Sie geraten oft in Panik und sind gestresst, wenn Sie stark bekifft sind",
+}

@@ -1,0 +1,5 @@
+ContextMenu_RU = {
+	ContextMenu_Cultivation_Skill = "Культивирование травки",
+	ContextMenu_Chew = "Жевать",
+	ContextMenu_Seeds_into_a_Pack = "Семена в пакете",
+}

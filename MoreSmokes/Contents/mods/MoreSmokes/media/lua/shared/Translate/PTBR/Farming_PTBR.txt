@@ -1,0 +1,6 @@
+Farming_PTBR = {
+    Farming_NorthernLights = "Maconha da "Northern Lights"",
+    Farming_PurpleHaze = "Maconha da "Purple Haze"",
+    Farming_SourDiesel = "Maconha da "Sour Diesel"",
+    Farming_Tobacco = "Tabaco",
+}

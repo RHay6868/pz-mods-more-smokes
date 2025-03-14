@@ -1,0 +1,790 @@
+module Packing
+{
+	imports
+	{
+		Base,
+	}
+
+	/******************************  BOOKS & MAGAZINES ******************************/
+
+	item pkCultivation
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2,
+		Type				= Normal,
+		DisplayName			= Bundle of Cultivation Books,
+		Icon				= PackCultivationBook,
+		WorldStaticModel	= PackCultivationBook,
+	}	
+
+	item pkMoreSmokesMags
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1,
+		Type				= Normal,
+		DisplayName			= Stack of More Smokes Recipe Magazines,
+		Icon				= PackMoreSmokesMags,
+		WorldStaticModel	= PackMoreSmokesMags,
+	}	
+
+	item pkMoreSmokesRareMags
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1,
+		Type				= Normal,
+		DisplayName			= Stack of More Smokes Rare Recipe Magazines,
+		Icon				= PackMoreSmokesRareMags,
+		WorldStaticModel	= PackMoreSmokesRareMags,
+	}	
+
+	/******************************  GENERAL ******************************/
+
+	item 5pkRollingPapersPack
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 5 x Rolling Papers Pack,
+		Icon				= PackRollingPapersPack,
+	}	
+
+	item 10pkRollingPapersPack
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.8,
+		Type				= Normal,
+		DisplayName			= 10 x Rolling Papers Pack,
+		Icon				= PackRollingPapersPack,
+	}	
+
+	item 5pkGrinder
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.35,
+		Type				= Normal,
+		DisplayName			= 5 x Weed Grinder,
+		Icon				= PackGrinder,
+	}	
+
+	item 10pkGrinder
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 10 x Weed Grinder,
+		Icon				= PackGrinder,
+	}	
+
+	/****************************** PACKS ******************************/
+
+	item 5pkMSCigaretteCarton
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 5 x Cigarette Carton,
+		Icon				= PackMSCigaretteCarton,
+	}	
+
+	item 10pkMSCigaretteCarton
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1,
+		Type				= Normal,
+		DisplayName			= 10 x Cigarette Carton,
+		Icon				= PackMSCigaretteCarton,
+	}	
+
+	item 5pkCigarilloPack
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 5 x Cigarillos Pack,
+		Icon				= PackCigarilloPack,
+	}	
+
+	item 10pkCigarilloPack
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Cigarillos Pack,
+		Icon				= PackCigarilloPack,
+	}	
+
+	item 5pkCigarBox
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 5 x Cigar Boxes,
+		Icon				= PackCigarBox,
+	}	
+
+	item 10pkCigarBox
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Cigar Boxes,
+		Icon				= PackCigarBox,
+	}	
+
+	item 5pkJointsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.28,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Joints ["Northern Lights"],
+		Icon				= PackJointsPackNorthernLights,
+	}	
+
+	item 10pkJointsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Joints ["Northern Lights"],
+		Icon				= PackJointsPackNorthernLights,
+	}	
+
+	item 5pkJointsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.28,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Joints ["Purple Haze"],
+		Icon				= PackJointsPackPurpleHaze,
+	}	
+
+	item 10pkJointsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Joints ["Purple Haze"],
+		Icon				= PackJointsPackPurpleHaze,
+	}
+
+	item 5pkJointsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.28,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Joints ["Sour Diesel"],
+		Icon				= PackJointsPackSourDiesel,
+	}	
+
+	item 10pkJointsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Joints ["Sour Diesel"],
+		Icon				= PackJointsPackSourDiesel,
+	}
+
+	item 5pkBluntsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Blunts ["Northern Lights"],
+		Icon				= PackBluntsPackNorthernLights,
+	}	
+
+	item 10pkBluntsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Blunts ["Northern Lights"],
+		Icon				= PackBluntsPackNorthernLights,
+	}
+
+	item 5pkBluntsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Blunts ["Purple Haze"],
+		Icon				= PackBluntsPackPurpleHaze,
+	}	
+
+	item 10pkBluntsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Blunts ["Purple Haze"],
+		Icon				= PackBluntsPackPurpleHaze,
+	}
+
+	item 5pkBluntsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Blunts ["Sour Diesel"],
+		Icon				= PackBluntsPackSourDiesel,
+	}	
+
+	item 10pkBluntsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Blunts ["Sour Diesel"],
+		Icon				= PackBluntsPackSourDiesel,
+	}
+
+	item 5pkSpliffsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.55,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Spliffs ["Northern Lights"],
+		Icon				= PackSpliffsPackNorthernLights,
+	}	
+
+	item 10pkSpliffsPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.75,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Spliffs ["Northern Lights"],
+		Icon				= PackSpliffsPackNorthernLights,
+	}
+
+	item 5pkSpliffsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.55,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Spliffs ["Purple Haze"],
+		Icon				= PackSpliffsPackPurpleHaze,
+	}	
+
+	item 10pkSpliffsPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.75,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Spliffs ["Purple Haze"],
+		Icon				= PackSpliffsPackPurpleHaze,
+	}
+
+	item 5pkSpliffsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.55,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Spliffs ["Sour Diesel"],
+		Icon				= PackSpliffsPackSourDiesel,
+	}	
+
+	item 10pkSpliffsPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.75,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Spliffs ["Sour Diesel"],
+		Icon				= PackSpliffsPackSourDiesel,
+	}
+
+	item 5pkJointsPackIndigoFog
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.28,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Joints ["Indigo Fog"],
+		Icon				= PackJointsPackIndigoFog,
+	}	
+
+	item 10pkJointsPackIndigoFog
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.4,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Joints ["Indigo Fog"],
+		Icon				= PackJointsPackIndigoFog,
+	}
+
+	item 5pkBluntsPackBackwoods
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.5,
+		Type				= Normal,
+		DisplayName			= 5 x Pack of Blunts ["Backwoods"],
+		Icon				= PackBluntsPackBackwoods,
+	}	
+
+	item 10pkBluntsPackBackwoods
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 10 x Pack of Blunts ["Backwoods"],
+		Icon				= PackBluntsPackBackwoods,
+	}
+
+	item 5pkChewingTobaccoCanEmpty
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.18,
+		Type				= Normal,
+		DisplayName			= 5 x Chewing Tobacco Empty Can,
+		Icon				= PackChewingTobaccoCanEmpty,
+	}	
+
+	item 25pkChewingTobaccoCanEmpty
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Chewing Tobacco Empty Can,
+		Icon				= PackChewingTobaccoCanEmpty,
+	}
+
+	
+	/******************** SEEDS PACKAGES ********************/
+
+	item 5pkSeedPackTobacco
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.45,
+		Type				= Normal,
+		DisplayName			= 5 x Tobacco Seeds Packet,
+		Icon				= PackSeedPackTobacco,
+	}	
+
+	item 25pkSeedPackTobacco
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.5,
+		Type				= Normal,
+		DisplayName			= 25 x Tobacco Seeds Packet,
+		Icon				= PackSeedPackTobacco,
+	}
+
+	item 5pkSeedPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 5 x Northern Lights Cannabis Seeds Packet,
+		Icon				= PackSeedPackNorthernLights,
+	}	
+
+	item 25pkSeedPackNorthernLights
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.25,
+		Type				= Normal,
+		DisplayName			= 25 x Northern Lights Cannabis Seeds Packet,
+		Icon				= PackSeedPackNorthernLights,
+	}
+
+	item 5pkSeedPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 5 x Purple Haze Cannabis Seeds Packet,
+		Icon				= PackSeedPackPurpleHaze,
+	}	
+
+	item 25pkSeedPackPurpleHaze
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.25,
+		Type				= Normal,
+		DisplayName			= 25 x Purple Haze Cannabis Seeds Packet,
+		Icon				= PackSeedPackPurpleHaze,
+	}
+
+	item 5pkSeedPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 5 x Sour Diesel Cannabis Seeds Packet,
+		Icon				= PackSeedPackSourDiesel,
+	}	
+
+	item 25pkSeedPackSourDiesel
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.25,
+		Type				= Normal,
+		DisplayName			= 25 x Sour Diesel Cannabis Seeds Packet,
+		Icon				= PackSeedPackSourDiesel,
+	}
+
+	/******************** TOBACCO PRODUCTS ********************/
+
+	item 5pkTobaccoLeavesDry 
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Tobacco Leaves [Dry],
+		Icon				= PackTobaccoLeavesDry,
+	}	
+
+	item 25pkTobaccoLeavesDry 
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Tobacco Leaves [Dry],
+		Icon				= PackTobaccoLeavesDry,
+	}
+
+	item 5pkTobaccoLoose 
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Tobacco,
+		Icon				= PackTobaccoLoose,
+	}	
+
+	item 25pkTobaccoLoose 
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Tobacco,
+		Icon				= PackTobaccoLoose,
+	}
+
+	item 5pkTobaccoZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.75,
+		Type				= Normal,
+		DisplayName			= 5 x Tobacco [Ziplock Bag],
+		Icon				= PackTobaccoZipLockBag,
+	}	
+
+	item 10pkTobaccoZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 10 x Tobacco [Ziplock Bag],
+		Icon				= PackTobaccoZipLockBag,
+	}
+
+	item 5pkTobaccoWrap
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Tobacco Wrap,
+		Icon				= PackTobaccoWrap,
+	}	
+
+	item 25pkTobaccoWrap
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Tobacco Wrap,
+		Icon				= PackTobaccoWrap,
+	}
+
+	/******************** CANNABIS PRODUCTS ********************/
+
+	item 5pkBudNorthernLightsDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Northern Lights Cannabis Buds [Dry],
+		Icon				= PackBudNorthernLightsDry,
+	}	
+
+	item 25pkBudNorthernLightsDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Northern Lights Cannabis Buds [Dry],
+		Icon				= PackBudNorthernLightsDry,
+	}
+
+	item 5pkBudPurpleHazeDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Purple Haze Cannabis Buds [Dry],
+		Icon				= PackBudPurpleHazeDry,
+	}	
+
+	item 25pkBudPurpleHazeDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Purple Haze Cannabis Buds [Dry],
+		Icon				= PackBudPurpleHazeDry,
+	}
+
+	item 5pkBudSourDieselDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Sour Diesel Cannabis Buds [Dry],
+		Icon				= PackBudSourDieselDry,
+	}	
+
+	item 25pkBudSourDieselDry
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Sour Diesel Cannabis Buds [Dry],
+		Icon				= PackBudSourDieselDry,
+	}
+
+	item 5pkBudNorthernLightsCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 5 x Northern Lights Cannabis Buds [Cured],
+		Icon				= PackBudNorthernLightsCured,
+	}	
+
+	item 25pkBudNorthernLightsCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 25 x Northern Lights Cannabis Buds [Cured],
+		Icon				= PackBudNorthernLightsCured,
+	}
+
+	item 5pkBudPurpleHazeCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 5 x Purple Haze Cannabis Buds [Cured],
+		Icon				= PackBudPurpleHazeCured,
+	}	
+
+	item 25pkBudPurpleHazeCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 25 x Purple Haze Cannabis Buds [Cured],
+		Icon				= PackBudPurpleHazeCured,
+	}
+
+	item 5pkBudSourDieselCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.7,
+		Type				= Normal,
+		DisplayName			= 5 x Sour Diesel Cannabis Buds [Cured],
+		Icon				= PackBudSourDieselCured,
+	}	
+
+	item 25pkBudSourDieselCured
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 25 x Sour Diesel Cannabis Buds [Cured],
+		Icon				= PackBudSourDieselCured,
+	}
+
+	item 5pkNorthernLightsLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Northern Lights Cannabis,
+		Icon				= PackNorthernLightsLoose,
+	}	
+
+	item 25pkNorthernLightsLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Northern Lights Cannabis,
+		Icon				= PackNorthernLightsLoose,
+	}
+
+	item 5pkPurpleHazeLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Purple Haze Cannabis,
+		Icon				= PackPurpleHazeLoose,
+	}	
+
+	item 25pkPurpleHazeLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Purple Haze Cannabis,
+		Icon				= PackPurpleHazeLoose,
+	}
+
+	item 5pkSourDieselLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.2,
+		Type				= Normal,
+		DisplayName			= 5 x Sour Diesel Cannabis,
+		Icon				= PackSourDieselLoose,
+	}	
+
+	item 25pkSourDieselLoose
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.65,
+		Type				= Normal,
+		DisplayName			= 25 x Sour Diesel Cannabis,
+		Icon				= PackSourDieselLoose,
+	}
+
+	item 5pkNorthernLightsZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.75,
+		Type				= Normal,
+		DisplayName			= 5 x Northern Lights Cannabis [Ziplock Bag],
+		Icon				= PackNorthernLightsZipLockBag,
+	}	
+
+	item 10pkNorthernLightsZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 10 x Northern Lights Cannabis [Ziplock Bag],
+		Icon				= PackNorthernLightsZipLockBag,
+	}
+
+	item 5pkPurpleHazeZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.75,
+		Type				= Normal,
+		DisplayName			= 5 x Purple Haze Cannabis [Ziplock Bag],
+		Icon				= PackPurpleHazeZipLockBag,
+	}	
+
+	item 10pkPurpleHazeZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 10 x Purple Haze Cannabis [Ziplock Bag],
+		Icon				= PackPurpleHazeZipLockBag,
+	}
+	
+	item 5pkSourDieselZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 1.75,
+		Type				= Normal,
+		DisplayName			= 5 x Sour Diesel Cannabis [Ziplock Bag],
+		Icon				= PackSourDieselZipLockBag,
+	}	
+
+	item 10pkSourDieselZipLockBag
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 2.5,
+		Type				= Normal,
+		DisplayName			= 10 x Sour Diesel Cannabis [Ziplock Bag],
+		Icon				= PackSourDieselZipLockBag,
+	}
+
+	/******************** TOBACCO FOOD PRODUCTS ********************/
+
+	item 5pkChewingTobaccoCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.45,
+		Type				= Normal,
+		DisplayName			= 5 x Chewing Tobacco,
+		Icon				= PackChewingTobaccoCan,
+	}	
+
+	item 10pkChewingTobaccoCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Chewing Tobacco,
+		Icon				= PackChewingTobaccoCan,
+	}
+
+	item 5pkShishaWatermelonCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.45,
+		Type				= Normal,
+		DisplayName			= 5 x Shisha Tobacco [Watermelon],
+		Icon				= PackShishaWatermelonCan,
+	}	
+
+	item 10pkShishaWatermelonCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Shisha Tobacco [Watermelon],
+		Icon				= PackShishaWatermelonCan,
+	}
+
+	item 5pkShishaOrangeCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.45,
+		Type				= Normal,
+		DisplayName			= 5 x Shisha Tobacco [Orange],
+		Icon				= PackShishaOrangeCan,
+	}	
+
+	item 10pkShishaOrangeCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Shisha Tobacco [Orange],
+		Icon				= PackShishaOrangeCan,
+	}
+
+	item 5pkShishaLemonCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.45,
+		Type				= Normal,
+		DisplayName			= 5 x Shisha Tobacco [Lemon],
+		Icon				= PackShishaLemonCan,
+	}	
+
+	item 10pkShishaLemonCan
+	{
+		DisplayCategory 	= MoreSmokes,
+		Weight				= 0.6,
+		Type				= Normal,
+		DisplayName			= 10 x Shisha Tobacco [Lemon],
+		Icon				= PackShishaLemonCan,
+	}
+}

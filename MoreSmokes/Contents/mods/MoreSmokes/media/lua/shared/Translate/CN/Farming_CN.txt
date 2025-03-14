@@ -1,0 +1,6 @@
+Farming_CN = {
+    Farming_NorthernLights = "大麻"北极光"",
+    Farming_PurpleHaze = "大麻"紫氤"",
+    Farming_SourDiesel = "大麻"酸柴油"",
+    Farming_Tobacco = "烟叶",
+}

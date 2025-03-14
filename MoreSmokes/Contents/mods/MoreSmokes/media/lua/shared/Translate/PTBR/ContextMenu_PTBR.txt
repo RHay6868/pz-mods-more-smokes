@@ -1,0 +1,5 @@
+ContextMenu_PTBR = {
+	ContextMenu_Cultivation_Skill = "Cultivo",
+	ContextMenu_Chew = "Mastigar",
+	ContextMenu_Seeds_into_a_Pack = "Sementes no Pacote",
+}

@@ -1,0 +1,17 @@
+Recipes_CN	= {
+	Recipe_Pack_Cultivation_Skill_Books				= "包 修炼技巧书籍",
+	Recipe_Unpack_Cultivation_Skill_Books 			= "打开包装 修炼技巧书籍",
+	Recipe_Pack_More_Smokes_Recipe_Magazines		= "包 更多吸烟食谱杂志",
+	Recipe_Unpack_More_Smokes_Recipe_Magazines 		= "打开包装 更多吸烟食谱杂志",
+	Recipe_Pack_More_Smokes_Rare_Recipe_Magazines	= "包 更多吸烟稀有食谱杂志",
+	Recipe_Unpack_More_Smokes_Rare_Recipe_Magazines = "打开包装 更多吸烟稀有食谱杂志",
+	Recipe_Pack_5 									= "包 5",
+	Recipe_Unpack_5 								= "打开包装 5",
+	Recipe_Pack_10 									= "包 10",
+	Recipe_Unpack_10 								= "打开包装 10",
+	Recipe_Pack_25 									= "包 25",
+	Recipe_Unpack_25 								= "打开包装 25",
+	Recipe_Put_Together 							= "放在一起",
+	Recipe_Split_into_2								= "分成2份",
+	Recipe_Split_into_5 							= "分成5份",
+}

@@ -1,0 +1,10 @@
+IGUI_DE =
+{
+	IGUI_ItemCat_MoreSmokes = "MoreSmokes",
+	IGUI_CraftCategory_MoreSmokes =  "MoreSmokes",
+    IGUI_BTSE.Tobacco = "Tabak",
+	IGUI_BTSE.Farming_Cannabis = "Cannabis Sorten",
+	IGUI_perks_Cultivation = "Kultivierung",
+    IGUI_BTSE_F_RevitalizePlant = "Revitalisiere %1",
+    IGUI_PARP_F_CnfRevitalized = "Das sollte in 10 Minuten viel besser aussehen.",
+}

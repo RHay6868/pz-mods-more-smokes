@@ -1,0 +1,13 @@
+Moodles_CN {
+	-- Moodle type
+    Moodles_Stoned_Good_lvl1 = "有点嗨~",
+    Moodles_Stoned_Good_lvl2 = "中度嗨~",
+    Moodles_Stoned_Good_lvl3 = "非常嗨~",
+    Moodles_Stoned_Good_lvl4 = "极度嗨~",
+
+    -- Description of moodle
+    Moodles_Stoned_Good_desc_lvl1 = "有点感觉了",
+    Moodles_Stoned_Good_desc_lvl2 = "还能再来点儿",
+    Moodles_Stoned_Good_desc_lvl3 = "乘风飞翔",
+    Moodles_Stoned_Good_desc_lvl4 = "天上~人间~",
+}

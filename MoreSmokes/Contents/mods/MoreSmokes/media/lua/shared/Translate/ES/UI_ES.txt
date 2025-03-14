@@ -1,0 +1,6 @@
+UI_ES = {
+    UI_trait_stoner = "Pacheco",
+    UI_trait_stonerinfo = "Otorga +1 a las habilidades de cultivo, lo que te permite forjar -porros de inmediato<br>Drogarse tiene más ventajas y menos desventajas.",
+    UI_trait_paranoid_toker = "Pálida",
+    UI_trait_paranoid_tokerinfo = "A menudo experimentas crisis de pánico, ansiedad o paranoia cuando estás muy drogado.",
+}

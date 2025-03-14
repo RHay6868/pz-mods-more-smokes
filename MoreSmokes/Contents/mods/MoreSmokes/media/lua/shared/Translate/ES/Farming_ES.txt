@@ -1,0 +1,6 @@
+Farming_ES = {
+    Farming_NorthernLights = "Marihuana [Northern Lights]",
+    Farming_PurpleHaze = "Marihuana [Purple Haze]",
+    Farming_SourDiesel = "Marihuana [Sour Diesel]",
+    Farming_Tobacco = "Tabaco",
+}

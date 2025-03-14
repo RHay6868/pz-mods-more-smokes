@@ -1,0 +1,13 @@
+Moodles_ES {
+	-- Moodle type
+    Moodles_Stoned_Good_lvl1 = "Un Poco Drogado",
+    Moodles_Stoned_Good_lvl2 = "Moderadamente Drogado",
+    Moodles_Stoned_Good_lvl3 = "Muy Drogado",
+    Moodles_Stoned_Good_lvl4 = "Extremadamente Drogado",
+
+    -- Description of moodle
+    Moodles_Stoned_Good_desc_lvl1 = "Empezando a Sentirlo",
+    Moodles_Stoned_Good_desc_lvl2 = "Munchies Muy Pronto",
+    Moodles_Stoned_Good_desc_lvl3 = "Tan Alto Como una Cometa",
+    Moodles_Stoned_Good_desc_lvl4 = "Absolutamente Eufórico",
+}

@@ -1,0 +1,10 @@
+IGUI_CN =
+{
+	IGUI_ItemCat_MoreSmokes = "更多烟草",
+	IGUI_CraftCategory_MoreSmokes =  "更多烟草",
+    IGUI_BTSE.Tobacco = "烟草",
+	IGUI_BTSE.Farming_Cannabis = "大麻植株",
+	IGUI_perks_Cultivation = "烟艺",
+    IGUI_BTSE_F_RevitalizePlant = "恢复活力 %1",
+    IGUI_PARP_F_CnfRevitalized = "10分钟后它就好多了",
+}

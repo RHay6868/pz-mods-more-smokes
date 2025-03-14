@@ -1,0 +1,13 @@
+Moodles_DE {
+	-- Moodle type
+    Moodles_Stoned_Good_lvl1 = "Ein bisschen bekifft",
+    Moodles_Stoned_Good_lvl2 = "Mäßig bekifft",
+    Moodles_Stoned_Good_lvl3 = "Sehr bekifft",
+    Moodles_Stoned_Good_lvl4 = "Extrem bekifft",
+ 
+    -- Description of moodle
+    Moodles_Stoned_Good_desc_lvl1 = "Ich fange an, es zu spüren",
+    Moodles_Stoned_Good_desc_lvl2 = "Bald lust auf Knabberzeug",
+    Moodles_Stoned_Good_desc_lvl3 = "Flieg' auf Wolke 7",
+    Moodles_Stoned_Good_desc_lvl4 = "Absolut euphorischer Rausch",
+}

@@ -1,0 +1,5 @@
+ContextMenu_CN = {
+	ContextMenu_Cultivation_Skill = "烟艺",
+	ContextMenu_Chew = "咀嚼",
+	ContextMenu_Seeds_into_a_Pack = "袋装种子",
+}

@@ -1,0 +1,2492 @@
+module Packing
+{
+	imports
+	{
+		Base,
+	}
+
+	/******************************  BOOKS & MAGAZINES ******************************/
+
+	recipe Pack Cultivation Skill Books
+	{
+		MoreSmokes.BookCultivation1,
+		MoreSmokes.BookCultivation2,
+		MoreSmokes.BookCultivation3,
+		MoreSmokes.BookCultivation4,
+		MoreSmokes.BookCultivation5,
+		
+		Result				:pkCultivation,
+		Time				:150.0,
+		Category			:Storage,
+	}
+	
+	recipe Unpack Cultivation Skill Books
+	{
+		pkCultivation,
+		
+		Result				:MoreSmokes.BookCultivation1,
+		OnCreate			:Recipe.OnCreate.UnpackCultivationSkillBook,
+		Time				:100.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack More Smokes Recipe Magazines
+	{
+		MoreSmokes.MoreSmokesMagazine1,
+		MoreSmokes.MoreSmokesMagazine2,
+		MoreSmokes.MoreSmokesMagazine3,
+		MoreSmokes.MoreSmokesMagazine4,
+		
+		Result				:pkMoreSmokesMags,
+		Time				:150.0,
+		Category			:Storage,
+	}
+	
+	recipe Unpack More Smokes Recipe Magazines
+	{
+		pkMoreSmokesMags,
+		
+		Result				:MoreSmokes.MoreSmokesMagazine1,
+		OnCreate			:Recipe.OnCreate.UnpackMSRecipeMagazines,
+		Time				:100.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack More Smokes Rare Recipe Magazines
+	{
+		MoreSmokes.MoreSmokesSmokesPlusMagazine,
+		MoreSmokes.MoreSmokesEdiblesPlusMagazine,
+		MoreSmokes.BackwoodBluntsMagazine,
+		MoreSmokes.IndigoFogMagazine,
+		MoreSmokes.CannabisButterGreenDreamsMagazine,
+		
+		Result				:pkMoreSmokesRareMags,
+		Time				:150.0,
+		Category			:Storage,
+	}
+	
+	recipe Unpack More Smokes Rare Recipe Magazines
+	{
+		pkMoreSmokesRareMags,
+		
+		Result				:MoreSmokes.MoreSmokesSmokesPlusMagazine,
+		OnCreate			:Recipe.OnCreate.UnpackMSRareRecipeMagazines,
+		Time				:100.0,
+		Category			:Storage,
+	}	
+
+	/******************************  GENERAL ******************************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.RollingPapersPack=5,
+		
+		Result				:5pkRollingPapersPack,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkRollingPapersPack,
+		
+		Result				:MoreSmokes.RollingPapersPack=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.RollingPapersPack=10,
+		
+		Result				:10pkRollingPapersPack,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkRollingPapersPack,
+		
+		Result				:MoreSmokes.RollingPapersPack=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkRollingPapersPack=2,
+		
+		Result				:10pkRollingPapersPack,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkRollingPapersPack,
+		
+		Result				:5pkRollingPapersPack=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.Grinder=5,
+		
+		Result				:5pkGrinder,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkGrinder,
+		
+		Result				:MoreSmokes.Grinder=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.Grinder=10,
+		
+		Result				:10pkGrinder,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkGrinder,
+		
+		Result				:MoreSmokes.Grinder=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkGrinder=2,
+		
+		Result				:10pkGrinder,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkGrinder,
+		
+		Result				:5pkGrinder=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	/****************************** PACKS ******************************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.MSCigaretteCarton=5,
+		
+		Result				:5pkMSCigaretteCarton,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkMSCigaretteCarton,
+		
+		Result				:MoreSmokes.MSCigaretteCarton=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.MSCigaretteCarton=10,
+		
+		Result				:10pkMSCigaretteCarton,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkMSCigaretteCarton,
+		
+		Result				:MoreSmokes.MSCigaretteCarton=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkMSCigaretteCarton=2,
+		
+		Result				:10pkMSCigaretteCarton,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkMSCigaretteCarton,
+		
+		Result				:5pkMSCigaretteCarton=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.CigarilloPack=5,
+		
+		Result				:5pkCigarilloPack,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkCigarilloPack,
+		
+		Result				:MoreSmokes.CigarilloPack=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.CigarilloPack=10,
+		
+		Result				:10pkCigarilloPack,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkCigarilloPack,
+		
+		Result				:MoreSmokes.CigarilloPack=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkCigarilloPack=2,
+		
+		Result				:10pkCigarilloPack,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkCigarilloPack,
+		
+		Result				:5pkCigarilloPack=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.CigarBox=5,
+		
+		Result				:5pkCigarBox,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkCigarBox,
+		
+		Result				:MoreSmokes.CigarBox=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.CigarBox=10,
+		
+		Result				:10pkCigarBox,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkCigarBox,
+		
+		Result				:MoreSmokes.CigarBox=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkCigarBox=2,
+		
+		Result				:10pkCigarBox,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkCigarBox,
+		
+		Result				:5pkCigarBox=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.JointsPackNorthernLights=5,
+		
+		Result				:5pkJointsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkJointsPackNorthernLights,
+		
+		Result				:MoreSmokes.JointsPackNorthernLights=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.JointsPackNorthernLights=10,
+		
+		Result				:10pkJointsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkJointsPackNorthernLights,
+		
+		Result				:MoreSmokes.JointsPackNorthernLights=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkJointsPackNorthernLights=2,
+		
+		Result				:10pkJointsPackNorthernLights,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkJointsPackNorthernLights,
+		
+		Result				:5pkJointsPackNorthernLights=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.JointsPackPurpleHaze=5,
+		
+		Result				:5pkJointsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkJointsPackPurpleHaze,
+		
+		Result				:MoreSmokes.JointsPackPurpleHaze=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.JointsPackPurpleHaze=10,
+		
+		Result				:10pkJointsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkJointsPackPurpleHaze,
+		
+		Result				:MoreSmokes.JointsPackPurpleHaze=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkJointsPackPurpleHaze=2,
+		
+		Result				:10pkJointsPackPurpleHaze,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkJointsPackPurpleHaze,
+		
+		Result				:5pkJointsPackPurpleHaze=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.JointsPackSourDiesel=5,
+		
+		Result				:5pkJointsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkJointsPackSourDiesel,
+		
+		Result				:MoreSmokes.JointsPackSourDiesel=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.JointsPackSourDiesel=10,
+		
+		Result				:10pkJointsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkJointsPackSourDiesel,
+		
+		Result				:MoreSmokes.JointsPackSourDiesel=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkJointsPackSourDiesel=2,
+		
+		Result				:10pkJointsPackSourDiesel,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkJointsPackSourDiesel,
+		
+		Result				:5pkJointsPackSourDiesel=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BluntsPackNorthernLights=5,
+		
+		Result				:5pkBluntsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBluntsPackNorthernLights,
+		
+		Result				:MoreSmokes.BluntsPackNorthernLights=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.BluntsPackNorthernLights=10,
+		
+		Result				:10pkBluntsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkBluntsPackNorthernLights,
+		
+		Result				:MoreSmokes.BluntsPackNorthernLights=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBluntsPackNorthernLights=2,
+		
+		Result				:10pkBluntsPackNorthernLights,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkBluntsPackNorthernLights,
+		
+		Result				:5pkBluntsPackNorthernLights=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BluntsPackPurpleHaze=5,
+		
+		Result				:5pkBluntsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBluntsPackPurpleHaze,
+		
+		Result				:MoreSmokes.BluntsPackPurpleHaze=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.BluntsPackPurpleHaze=10,
+		
+		Result				:10pkBluntsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkBluntsPackPurpleHaze,
+		
+		Result				:MoreSmokes.BluntsPackPurpleHaze=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBluntsPackPurpleHaze=2,
+		
+		Result				:10pkBluntsPackPurpleHaze,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkBluntsPackPurpleHaze,
+		
+		Result				:5pkBluntsPackPurpleHaze=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BluntsPackSourDiesel=5,
+		
+		Result				:5pkBluntsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBluntsPackSourDiesel,
+		
+		Result				:MoreSmokes.BluntsPackSourDiesel=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.BluntsPackSourDiesel=10,
+		
+		Result				:10pkBluntsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkBluntsPackSourDiesel,
+		
+		Result				:MoreSmokes.BluntsPackSourDiesel=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBluntsPackSourDiesel=2,
+		
+		Result				:10pkBluntsPackSourDiesel,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkBluntsPackSourDiesel,
+		
+		Result				:5pkBluntsPackSourDiesel=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SpliffsPackNorthernLights=5,
+		
+		Result				:5pkSpliffsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSpliffsPackNorthernLights,
+		
+		Result				:MoreSmokes.SpliffsPackNorthernLights=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.SpliffsPackNorthernLights=10,
+		
+		Result				:10pkSpliffsPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkSpliffsPackNorthernLights,
+		
+		Result				:MoreSmokes.SpliffsPackNorthernLights=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSpliffsPackNorthernLights=2,
+		
+		Result				:10pkSpliffsPackNorthernLights,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkSpliffsPackNorthernLights,
+		
+		Result				:5pkSpliffsPackNorthernLights=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SpliffsPackPurpleHaze=5,
+		
+		Result				:5pkSpliffsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSpliffsPackPurpleHaze,
+		
+		Result				:MoreSmokes.SpliffsPackPurpleHaze=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.SpliffsPackPurpleHaze=10,
+		
+		Result				:10pkSpliffsPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkSpliffsPackPurpleHaze,
+		
+		Result				:MoreSmokes.SpliffsPackPurpleHaze=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSpliffsPackPurpleHaze=2,
+		
+		Result				:10pkSpliffsPackPurpleHaze,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkSpliffsPackPurpleHaze,
+		
+		Result				:5pkSpliffsPackPurpleHaze=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SpliffsPackSourDiesel=5,
+		
+		Result				:5pkSpliffsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSpliffsPackSourDiesel,
+		
+		Result				:MoreSmokes.SpliffsPackSourDiesel=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.SpliffsPackSourDiesel=10,
+		
+		Result				:10pkSpliffsPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkSpliffsPackSourDiesel,
+		
+		Result				:MoreSmokes.SpliffsPackSourDiesel=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSpliffsPackSourDiesel=2,
+		
+		Result				:10pkSpliffsPackSourDiesel,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkSpliffsPackSourDiesel,
+		
+		Result				:5pkSpliffsPackSourDiesel=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.JointsPackIndigoFog=5,
+		
+		Result				:5pkJointsPackIndigoFog,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkJointsPackIndigoFog,
+		
+		Result				:MoreSmokes.JointsPackIndigoFog=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.JointsPackIndigoFog=10,
+		
+		Result				:10pkJointsPackIndigoFog,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkJointsPackIndigoFog,
+		
+		Result				:MoreSmokes.JointsPackIndigoFog=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkJointsPackIndigoFog=2,
+		
+		Result				:10pkJointsPackIndigoFog,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkJointsPackIndigoFog,
+		
+		Result				:5pkJointsPackIndigoFog=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BluntsPackBackwoods=5,
+		
+		Result				:5pkBluntsPackBackwoods,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBluntsPackBackwoods,
+		
+		Result				:MoreSmokes.BluntsPackBackwoods=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.BluntsPackBackwoods=10,
+		
+		Result				:10pkBluntsPackBackwoods,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkBluntsPackBackwoods,
+		
+		Result				:MoreSmokes.BluntsPackBackwoods=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBluntsPackBackwoods=2,
+		
+		Result				:10pkBluntsPackBackwoods,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkBluntsPackBackwoods,
+		
+		Result				:5pkBluntsPackBackwoods=2,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy [Recipe.GetItemTypes.TobaccoCan]=5,
+		
+		Result				:5pkChewingTobaccoCanEmpty,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkChewingTobaccoCanEmpty,
+		
+		Result				:MoreSmokes.ChewingTobaccoCanEmpty=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy [Recipe.GetItemTypes.TobaccoCan]=25,
+		
+		Result				:25pkChewingTobaccoCanEmpty,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkChewingTobaccoCanEmpty,
+		
+		Result				:MoreSmokes.ChewingTobaccoCanEmpty=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkChewingTobaccoCanEmpty=5,
+		
+		Result				:25pkChewingTobaccoCanEmpty,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkChewingTobaccoCanEmpty,
+		
+		Result				:5pkChewingTobaccoCanEmpty=5,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	
+	/******************** SEEDS PACKAGES ********************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SeedPackTobacco=5,
+		
+		Result				:5pkSeedPackTobacco,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSeedPackTobacco,
+		
+		Result				:MoreSmokes.SeedPackTobacco=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.SeedPackTobacco=25,
+
+		
+		Result				:25pkSeedPackTobacco,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkSeedPackTobacco,
+		
+		Result				:MoreSmokes.SeedPackTobacco=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSeedPackTobacco=5,
+		
+		Result				:25pkSeedPackTobacco,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkSeedPackTobacco,
+		
+		Result				:5pkSeedPackTobacco=5,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SeedPackNorthernLights=5,
+		
+		Result				:5pkSeedPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSeedPackNorthernLights,
+		
+		Result				:MoreSmokes.SeedPackNorthernLights=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.SeedPackNorthernLights=25,
+
+		
+		Result				:25pkSeedPackNorthernLights,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkSeedPackNorthernLights,
+		
+		Result				:MoreSmokes.SeedPackNorthernLights=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSeedPackNorthernLights=5,
+		
+		Result				:25pkSeedPackNorthernLights,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkSeedPackNorthernLights,
+		
+		Result				:5pkSeedPackNorthernLights=5,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SeedPackPurpleHaze=5,
+		
+		Result				:5pkSeedPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSeedPackPurpleHaze,
+		
+		Result				:MoreSmokes.SeedPackPurpleHaze=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.SeedPackPurpleHaze=25,
+
+		
+		Result				:25pkSeedPackPurpleHaze,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkSeedPackPurpleHaze,
+		
+		Result				:MoreSmokes.SeedPackPurpleHaze=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSeedPackPurpleHaze=5,
+		
+		Result				:25pkSeedPackPurpleHaze,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkSeedPackPurpleHaze,
+		
+		Result				:5pkSeedPackPurpleHaze=5,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SeedPackSourDiesel=5,
+		
+		Result				:5pkSeedPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSeedPackSourDiesel,
+		
+		Result				:MoreSmokes.SeedPackSourDiesel=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.SeedPackSourDiesel =25,
+
+		
+		Result				:25pkSeedPackSourDiesel,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkSeedPackSourDiesel,
+		
+		Result				:MoreSmokes.SeedPackSourDiesel=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSeedPackSourDiesel =5,
+		
+		Result				:25pkSeedPackSourDiesel,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkSeedPackSourDiesel,
+		
+		Result				:5pkSeedPackSourDiesel=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	/******************** TOBACCO PRODUCTS ********************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.TobaccoLeavesDry=5,
+		
+		Result				:5pkTobaccoLeavesDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkTobaccoLeavesDry,
+		
+		Result				:MoreSmokes.TobaccoLeavesDry=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.TobaccoLeavesDry=25,
+
+		
+		Result				:25pkTobaccoLeavesDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkTobaccoLeavesDry,
+		
+		Result				:MoreSmokes.TobaccoLeavesDry=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkTobaccoLeavesDry=5,
+		
+		Result				:25pkTobaccoLeavesDry,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkTobaccoLeavesDry,
+		
+		Result				:5pkTobaccoLeavesDry=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.TobaccoLoose=5,
+		
+		Result				:5pkTobaccoLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkTobaccoLoose,
+		
+		Result				:MoreSmokes.TobaccoLoose=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.TobaccoLoose=25,
+
+		
+		Result				:25pkTobaccoLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkTobaccoLoose,
+		
+		Result				:MoreSmokes.TobaccoLoose=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkTobaccoLoose=5,
+		
+		Result				:25pkTobaccoLoose,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkTobaccoLoose,
+		
+		Result				:5pkTobaccoLoose=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.TobaccoZipLockBag=5,
+		
+		Result				:5pkTobaccoZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkTobaccoZipLockBag,
+		
+		Result				:MoreSmokes.TobaccoZipLockBag=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.TobaccoZipLockBag=10,
+
+		
+		Result				:10pkTobaccoZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkTobaccoZipLockBag,
+		
+		Result				:MoreSmokes.TobaccoZipLockBag=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkTobaccoZipLockBag=2,
+		
+		Result				:10pkTobaccoZipLockBag,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkTobaccoZipLockBag,
+		
+		Result				:5pkTobaccoZipLockBag=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.TobaccoWrap=5,
+		
+		Result				:5pkTobaccoWrap,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkTobaccoWrap,
+		
+		Result				:MoreSmokes.TobaccoWrap=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.TobaccoWrap =25,
+
+		
+		Result				:25pkTobaccoWrap,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkTobaccoWrap,
+		
+		Result				:MoreSmokes.TobaccoWrap=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkTobaccoWrap=5,
+		
+		Result				:25pkTobaccoWrap,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkTobaccoWrap,
+		
+		Result				:5pkTobaccoWrap=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	/******************** CANNABIS PRODUCTS ********************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudNorthernLightsDry=5,
+		
+		Result				:5pkBudNorthernLightsDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudNorthernLightsDry,
+		
+		Result				:MoreSmokes.BudNorthernLightsDry=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudNorthernLightsDry =25,
+
+		
+		Result				:25pkBudNorthernLightsDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudNorthernLightsDry,
+		
+		Result				:MoreSmokes.BudNorthernLightsDry=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudNorthernLightsDry=5,
+		
+		Result				:25pkBudNorthernLightsDry,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudNorthernLightsDry,
+		
+		Result				:5pkBudNorthernLightsDry=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudPurpleHazeDry=5,
+		
+		Result				:5pkBudPurpleHazeDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudPurpleHazeDry,
+		
+		Result				:MoreSmokes.BudPurpleHazeDry=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudPurpleHazeDry=25,
+
+		
+		Result				:25pkBudPurpleHazeDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudPurpleHazeDry,
+		
+		Result				:MoreSmokes.BudPurpleHazeDry=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudPurpleHazeDry=5,
+		
+		Result				:25pkBudPurpleHazeDry,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudPurpleHazeDry,
+		
+		Result				:5pkBudPurpleHazeDry=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudSourDieselDry=5,
+		
+		Result				:5pkBudSourDieselDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudSourDieselDry,
+		
+		Result				:MoreSmokes.BudSourDieselDry=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudSourDieselDry=25,
+
+		
+		Result				:25pkBudSourDieselDry,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudSourDieselDry,
+		
+		Result				:MoreSmokes.BudSourDieselDry=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudSourDieselDry=5,
+		
+		Result				:25pkBudSourDieselDry,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudSourDieselDry,
+		
+		Result				:5pkBudSourDieselDry=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudNorthernLightsCured=5,
+		
+		Result				:5pkBudNorthernLightsCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudNorthernLightsCured,
+		
+		Result				:MoreSmokes.BudNorthernLightsCured=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudNorthernLightsCured=25,
+
+		
+		Result				:25pkBudNorthernLightsCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudNorthernLightsCured,
+		
+		Result				:MoreSmokes.BudNorthernLightsCured=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudNorthernLightsCured=5,
+		
+		Result				:25pkBudNorthernLightsCured,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudNorthernLightsCured,
+		
+		Result				:5pkBudNorthernLightsCured=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudPurpleHazeCured=5,
+		
+		Result				:5pkBudPurpleHazeCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudPurpleHazeCured,
+		
+		Result				:MoreSmokes.BudPurpleHazeCured=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudPurpleHazeCured=25,
+
+		
+		Result				:25pkBudPurpleHazeCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudPurpleHazeCured,
+		
+		Result				:MoreSmokes.BudPurpleHazeCured=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudPurpleHazeCured=5,
+		
+		Result				:25pkBudPurpleHazeCured,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudPurpleHazeCured,
+		
+		Result				:5pkBudPurpleHazeCured=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.BudSourDieselCured=5,
+		
+		Result				:5pkBudSourDieselCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkBudSourDieselCured,
+		
+		Result				:MoreSmokes.BudSourDieselCured=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.BudSourDieselCured=25,
+
+		
+		Result				:25pkBudSourDieselCured,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkBudSourDieselCured,
+		
+		Result				:MoreSmokes.BudSourDieselCured=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkBudSourDieselCured=5,
+		
+		Result				:25pkBudSourDieselCured,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkBudSourDieselCured,
+		
+		Result				:5pkBudSourDieselCured=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.NorthernLightsLoose=5,
+		
+		Result				:5pkNorthernLightsLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkNorthernLightsLoose,
+		
+		Result				:MoreSmokes.NorthernLightsLoose=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.NorthernLightsLoose=25,
+
+		
+		Result				:25pkNorthernLightsLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkNorthernLightsLoose,
+		
+		Result				:MoreSmokes.NorthernLightsLoose=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkNorthernLightsLoose=5,
+		
+		Result				:25pkNorthernLightsLoose,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkNorthernLightsLoose,
+		
+		Result				:5pkNorthernLightsLoose=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.PurpleHazeLoose=5,
+		
+		Result				:5pkPurpleHazeLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkPurpleHazeLoose,
+		
+		Result				:MoreSmokes.PurpleHazeLoose=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.PurpleHazeLoose=25,
+
+		
+		Result				:25pkPurpleHazeLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkPurpleHazeLoose,
+		
+		Result				:MoreSmokes.PurpleHazeLoose=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkPurpleHazeLoose=5,
+		
+		Result				:25pkPurpleHazeLoose,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkPurpleHazeLoose,
+		
+		Result				:5pkPurpleHazeLoose=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SourDieselLoose=5,
+		
+		Result				:5pkSourDieselLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSourDieselLoose,
+		
+		Result				:MoreSmokes.SourDieselLoose=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 25
+	{
+		destroy MoreSmokes.SourDieselLoose=25,
+
+		
+		Result				:25pkSourDieselLoose,
+		OnTest				:Recipe.OnTest.IsFavorite,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 25
+	{
+		destroy 25pkSourDieselLoose,
+		
+		Result				:MoreSmokes.SourDieselLoose=25,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSourDieselLoose=5,
+		
+		Result				:25pkSourDieselLoose,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 5
+	{
+		25pkSourDieselLoose,
+		
+		Result				:5pkSourDieselLoose=5,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.NorthernLightsZipLockBag=5,
+		
+		Result				:5pkNorthernLightsZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkNorthernLightsZipLockBag,
+		
+		Result				:MoreSmokes.NorthernLightsZipLockBag=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.NorthernLightsZipLockBag=10,
+
+		
+		Result				:10pkNorthernLightsZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkNorthernLightsZipLockBag,
+		
+		Result				:MoreSmokes.NorthernLightsZipLockBag=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkNorthernLightsZipLockBag=2,
+		
+		Result				:10pkNorthernLightsZipLockBag,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkNorthernLightsZipLockBag,
+		
+		Result				:5pkNorthernLightsZipLockBag=2,
+		Time				:75.0,
+		Category			:Storage,
+	}		
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.PurpleHazeZipLockBag=5,
+		
+		Result				:5pkPurpleHazeZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkPurpleHazeZipLockBag,
+		
+		Result				:MoreSmokes.PurpleHazeZipLockBag=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.PurpleHazeZipLockBag=10,
+
+		
+		Result				:10pkPurpleHazeZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkPurpleHazeZipLockBag,
+		
+		Result				:MoreSmokes.PurpleHazeZipLockBag=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkPurpleHazeZipLockBag=2,
+		
+		Result				:10pkPurpleHazeZipLockBag,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkPurpleHazeZipLockBag,
+		
+		Result				:5pkPurpleHazeZipLockBag=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.SourDieselZipLockBag=5,
+		
+		Result				:5pkSourDieselZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkSourDieselZipLockBag,
+		
+		Result				:MoreSmokes.SourDieselZipLockBag=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.SourDieselZipLockBag=10,
+
+		
+		Result				:10pkSourDieselZipLockBag,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkSourDieselZipLockBag,
+		
+		Result				:MoreSmokes.SourDieselZipLockBag=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkSourDieselZipLockBag=2,
+		
+		Result				:10pkSourDieselZipLockBag,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkSourDieselZipLockBag,
+		
+		Result				:5pkSourDieselZipLockBag=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	/******************** TOBACCO FOOD PRODUCTS ********************/
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.ChewingTobaccoCan=5,
+		
+		Result				:5pkChewingTobaccoCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkChewingTobaccoCan,
+		
+		Result				:MoreSmokes.ChewingTobaccoCan=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.ChewingTobaccoCan=10,
+
+		
+		Result				:10pkChewingTobaccoCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkChewingTobaccoCan,
+		
+		Result				:MoreSmokes.ChewingTobaccoCan=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkChewingTobaccoCan=2,
+		
+		Result				:10pkChewingTobaccoCan,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkChewingTobaccoCan,
+		
+		Result				:5pkChewingTobaccoCan=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.ShishaWatermelonCan=5,
+		
+		Result				:5pkShishaWatermelonCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkShishaWatermelonCan,
+		
+		Result				:MoreSmokes.ShishaWatermelonCan=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.ShishaWatermelonCan=10,
+
+		
+		Result				:10pkShishaWatermelonCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkShishaWatermelonCan,
+		
+		Result				:MoreSmokes.ShishaWatermelonCan=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkShishaWatermelonCan=2,
+		
+		Result				:10pkShishaWatermelonCan,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkShishaWatermelonCan,
+		
+		Result				:5pkShishaWatermelonCan=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.ShishaOrangeCan=5,
+		
+		Result				:5pkShishaOrangeCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkShishaOrangeCan,
+		
+		Result				:MoreSmokes.ShishaOrangeCan=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.ShishaOrangeCan=10,
+
+		
+		Result				:10pkShishaOrangeCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkShishaOrangeCan,
+		
+		Result				:MoreSmokes.ShishaOrangeCan=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkShishaOrangeCan=2,
+		
+		Result				:10pkShishaOrangeCan,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkShishaOrangeCan,
+		
+		Result				:5pkShishaOrangeCan=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+
+	recipe Pack 5
+	{
+		destroy MoreSmokes.ShishaLemonCan=5,
+		
+		Result				:5pkShishaLemonCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 5
+	{
+		destroy 5pkShishaLemonCan,
+		
+		Result				:MoreSmokes.ShishaLemonCan=5,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Pack 10
+	{
+		destroy MoreSmokes.ShishaLemonCan=10,
+
+		
+		Result				:10pkShishaLemonCan,
+		OnTest				:Recipe.OnTest.IsFavoriteDrainable,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Unpack 10
+	{
+		destroy 10pkShishaLemonCan,
+		
+		Result				:MoreSmokes.ShishaLemonCan=10,
+		OnGiveXP			:Recipe.OnGiveXP.None,
+		Time				:50.0,
+		Category			:Storage,
+	}
+
+	recipe Put Together
+	{
+		5pkShishaLemonCan=2,
+		
+		Result				:10pkShishaLemonCan,
+		Time				:75.0,
+		Category			:Storage,
+	}
+
+	recipe Split into 2
+	{
+		10pkShishaLemonCan,
+		
+		Result				:5pkShishaLemonCan=2,
+		Time				:75.0,
+		Category			:Storage,
+	}	
+}

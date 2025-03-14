@@ -1,0 +1,5 @@
+ContextMenu_DE = {
+	ContextMenu_Cultivation_Skill = "Kultivierung",
+	ContextMenu_Chew = "Kauen",
+	ContextMenu_Seeds_into_a_Pack = "Samen in Packung",
+}

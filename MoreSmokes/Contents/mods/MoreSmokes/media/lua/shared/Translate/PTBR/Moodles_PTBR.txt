@@ -1,0 +1,13 @@
+Moodles_PTBR {
+	-- Moodle type
+    Moodles_Stoned_Good_lvl1 = "Um Pouco Alto",
+    Moodles_Stoned_Good_lvl2 = "Moderadamente Alto",
+    Moodles_Stoned_Good_lvl3 = "Muito Alto",
+    Moodles_Stoned_Good_lvl4 = "Extremamente Alto",
+
+    -- Description of moodle
+    Moodles_Stoned_Good_desc_lvl1 = "Começando a sentir isso",
+    Moodles_Stoned_Good_desc_lvl2 = "Munchies em um futuro próximo",
+    Moodles_Stoned_Good_desc_lvl3 = "Alto como uma Pipa",
+    Moodles_Stoned_Good_desc_lvl4 = "Absolutamente Eufórico",
+}

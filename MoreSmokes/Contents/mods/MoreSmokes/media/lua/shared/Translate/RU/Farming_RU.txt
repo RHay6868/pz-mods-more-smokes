@@ -1,0 +1,6 @@
+Farming_RU = {
+	Farming_NorthernLights = "Конопля "Северное Сияние"",
+	Farming_PurpleHaze = "Конопля "Пурпурная Мгла"",
+	Farming_SourDiesel = "Конопля "Кислый Дизель"",
+	Farming_Tobacco = "Табак",
+}
